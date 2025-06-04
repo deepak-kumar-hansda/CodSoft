@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.header{
+    background-image: linear-gradient(to right, rgba(53, 5, 5, 0), rgba(255,0,0,1));
+    width: 100%;
+    height: 40px;
+    color: black;
+    display: grid;
+    grid-template-areas: 
+    "a . e bc . "
+    "a . e bc . "
+    "a . e bc . ";
+
+
+
+}
+
+
+.header&phone{
+    align-items: right;
+}
+
+.c{
+    margin-bottom: 8px;
+    grid-area: bc;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content:end;
+     color: whitesmoke;
+    background-color: rgb(210, 147, 28);
+    border:1px solid white;
+    transition: 0.4s ease-in  ;
+    cursor: pointer;
+} 
+.c:hover{
+    background-color: azure;
+    color: black;
+} 
+
+.a{
+    margin-left: 20px;
+    grid-area: a;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    color: rgb(119, 89, 255);
+}
+i{
+    cursor: pointer;
+}
+
+.e{
+    margin-top: 10px;
+    color: rgb(252, 253, 254);
+    display: flex;
+    gap: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+i:hover{
+    scale: 1.5px;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+    ". . . . . . . . ."
+    ". a a . . b c . ."
+    ". a a . . b c . ."
+    ". . . . . . . . ."
+    ;
+}
+.lp{
+    margin-top: 15px;
+    grid-area: a;
+    color: navy;
+}
+
+.an{
+    grid-area: b;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+.h{
+    text-decoration: none;
+    display: block;
+    transition: 0.4s ease-in-out;
+    padding: 10px;
+}
+.h:hover{
+    background-color: antiquewhite;
+}
+
+.search{
+    grid-area: c;
+    margin-top: 18px;
+    transition: 0.5 ease-in-out;
+    padding: 5px;
+}
+
+
+
+.main{
+    height: 450px;
+    width: 100%;
+    background-image: url(https://www.bizlibrary.com/wp-content/uploads/2019/05/30141657/employeeretention.png);
+    background-size:cover;
+    background-position: center;
+    background-blend-mode: darken;
+    display: grid;
+    grid-template-columns: 320px 800px 100px 250px
+    ;
+    color: black;
+}
+.PP{
+    margin-left: 100px;
+    
+    gap: 50px;
+}
+.h3{
+    margin-top: 25px;
+    opacity: 0.4;
+    text-shadow: 1px -2px 5px blueviolet;
+    transition: 0.4s ease-in-out;
+}
+.h3:hover{
+    scale: 1.1;
+}
+.h1{
+    margin-top: 20px;
+    opacity: 0.4;
+    text-shadow: 1px -2px 5px blueviolet;
+    transition: 0.4s ease-in-out;
+}
+.h1:hover{
+    scale: 1.1;
+}
+.p{
+    margin-top: 30px;
+    opacity: 0.4;
+    text-shadow: 1px -2px 5px blueviolet;
+    color: lightblue;
+    transition: 0.4s ease-in-out;
+}
+.p:hover{
+    scale: 1.1;
+}
+.b{ margin-left: 25px;
+    grid-area: b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blueviolet;
+    opacity: 1;
+    text-shadow: 2px 2px 2px lightgrey;
+}
+.B{
+    margin-top: 20px;
+}
+.RM{
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    border-color: beige;
+    background: linear-gradient(to right, rgba(53, 5, 5, 0), rgba(255,0,0,1));
+    color: rebeccapurple;
+    transition: 0.4s ease-in-out;
+}
+.RM:hover{
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: whitesmoke;
+}
+.RC{
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+     border-color: beige;
+    background: linear-gradient(to right, rgba(53, 5, 5, 0), rgba(255,0,0,1));
+    color: rebeccapurple;
+}
+.RC:hover{
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: whitesmoke;
+}
+
+
+
+
+.routin{
+    height: 200px;
+    width: 100%;
+    background-image:linear-gradient(to right, rgba(53, 5, 5, 0), rgba(255,0,0,1)) ;
+}
+.lot{
+    height: 200px;
+    width: 60%;
+    margin-left: 300px;
+    color: whitesmoke;
+}
+.lb{
+    font-size: 100;
+    word-spacing: -2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+.word{
+    display: flex;
+    padding-left: 50px;
+    word-wrap: no-wrap;
+}
+
+.aboutus{
+    height:400px;
+    width: 100%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 300px 600px 250px 250px;
+    gap: 10px;
+}
+h1{
+    text-decoration: underline gray;
+}
+h2{
+    margin-top: 5px;
+}
+p{
+    margin-top: 5px;
+}
+.rm{
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(53, 5, 5, 0), rgba(255,0,0,1));
+    color: blueviolet;
+    border: wheat;
+    box-shadow: 2px 2px 8px blueviolet;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.rm:hover{
+    background-image: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: whitesmoke;
+}
+
+
+.service{
+    height: 400px;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1649829186432-a02671e98fd0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGZhZGVkfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 300px 370px 250px 250px ;
+}
+.i1{
+    margin-top: 30px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 8px;
+}
+.i2{
+    margin-top: 78px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 8px;
+}
+.os{
+    margin-top: 10px;
+}
+
+.us{
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    border: wheat;
+    background: linear-gradient(90deg,rgba(120, 16, 16, 1) 0%, rgba(255, 49, 46, 1) 46%, rgba(247, 223, 223, 1) 100%);
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 8px black;
+    
+   display: flex;
+   gap: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.us:hover{
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    scale: 1.1;
+}
+
+.cd{
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    border: wheat;
+    background: linear-gradient(90deg,rgba(120, 16, 16, 1) 0%, rgba(255, 49, 46, 1) 46%, rgba(247, 223, 223, 1) 100%);
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  
+   display: flex;
+   gap: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    
+    transition: 0.4s ease-in-out;
+}
+.cd:hover{
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    scale: 1.1;
+}
+
